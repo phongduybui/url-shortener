@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import './Hero.scss';
+import FormInput from './FormInput';
 
 const Hero = () => {
   return (
@@ -14,6 +15,7 @@ const Hero = () => {
             </p>
             <button className="hero-content__btn btn btn--rounded">Get Started</button>
         </div>
+        <FormInput />
     </section>
   );
 };

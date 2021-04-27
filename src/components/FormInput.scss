@@ -1,0 +1,33 @@
+.form-input {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    width: 600px;
+    transform: translateX(-50%);
+    height: 120px;
+    background: #ddd;
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.input-link {
+    margin-right: 12px;
+    padding: 12px;
+    flex-grow: 1;
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 400px;
+    border-radius: 8px;
+}
+
+.input-link:focus {
+    outline: none;
+}
