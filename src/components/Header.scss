@@ -6,7 +6,9 @@
     align-items: center;
 
     &__logo {
-        padding: 5px 12px;
+        display: flex;
+        align-items: center;
+        height: 57px;
     }
 
     &__navbar {
@@ -17,30 +19,28 @@
             color: $text-color;
             text-decoration: none;
             padding: 5px 12px;
-            font-size: 1.6rem;
-        }
-    }
-
-    &__button {
-        .btn {
-            background-color: unset;
-            border: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
             font-size: 1.4rem;
-            color: $text-color;
-            padding: 6px 14px;
-        }
-
-        .btn--no-bg {
-            margin-right: 16px;
-        }
-
-        .btn--rounded {
-            background-color: $primary-color;
-            color: #fff;
-            border-radius: 20px;
         }
     }
+}
+
+.btn {
+    background-color: unset;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: $text-color;
+    padding: 6px 14px;
+}
+
+.btn--no-bg {
+    margin-right: 16px;
+}
+
+.btn--rounded {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 20px;
 }
 
