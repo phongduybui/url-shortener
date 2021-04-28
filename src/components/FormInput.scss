@@ -2,10 +2,15 @@
     position: absolute;
     bottom: -60px;
     left: 50%;
-    width: 600px;
+    width: 80%;
     transform: translateX(-50%);
     height: 120px;
-    background: #ddd;
+    background-color: #ddd;
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
 }
 
 .wrap {
