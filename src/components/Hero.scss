@@ -3,27 +3,27 @@
 .hero {
     position: relative;
     margin-top: 56px;
-    padding-bottom: 130px;
-    margin-right: -64px;
+    padding-bottom: 200px;
     display: flex;
-    overflow: hidden;
     
     &__cover {
         object-fit: contain;
         order: 1;
         flex-grow: 1;
+        margin-right: -56px;
+        overflow: hidden;
     }
 
     &__content {
-        margin-bottom: 200px;
-        flex: 0 0 60%;
-        max-width: 60%;
+        padding-top: 80px;
+        padding-right: 60px;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     &__title {
         font-size: 5.6rem;
         line-height: 5.6rem;
-        max-width: 500px;
         color: $secondary-color;
         font-weight: 700;
         margin: 0px;
@@ -32,7 +32,7 @@
     &__desc {
         font-size: 1.8rem;
         line-height: 2rem;
-        max-width: 500px;
+        max-width: 400px;
         color: $text-color;
         margin-bottom: 32px;
     }

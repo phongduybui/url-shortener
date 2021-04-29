@@ -1,38 +1,36 @@
+@import './variables';
+
 .form-input {
     position: absolute;
-    bottom: -60px;
-    left: 50%;
-    width: 80%;
-    transform: translateX(-50%);
-    height: 120px;
-    background-color: #ddd;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 120px;
+    background-color: $secondary-color;
     background-image: url(../images/bg-shorten-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
-}
-
-.wrap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.input-link {
-    margin-right: 12px;
-    padding: 12px;
-    flex-grow: 1;
-    border: 1px solid rgba(255,255,255,0.1);
-    width: 400px;
     border-radius: 8px;
-}
 
-.input-link:focus {
-    outline: none;
+    &__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0 64px;
+    }
+
+    &__input {
+        outline: none;
+        margin-right: 12px;
+        padding: 18px;
+        flex-grow: 1;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 8px;
+    }
 }
