@@ -3,33 +3,43 @@
 .hero {
     position: relative;
     margin-top: 56px;
-    padding: 90px 0;
-    background-image: url('../images/illustration-working.svg');
-    background-repeat: no-repeat;
-    background-position: right;
+    padding-bottom: 130px;
+    margin-right: -64px;
+    display: flex;
+    overflow: hidden;
+    
+    &__cover {
+        object-fit: contain;
+        order: 1;
+        flex-grow: 1;
+    }
 
-    .hero-content {
+    &__content {
         margin-bottom: 200px;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
 
-        &__title {
-            font-size: 5.6rem;
-            line-height: 5.6rem;
-            max-width: 500px;
-            color: $secondary-color;
-            font-weight: 700;
-            margin: 0px;
-        }
-        &__desc {
-            font-size: 1.8rem;
-            line-height: 2rem;
-            max-width: 500px;
-            color: $text-color;
-            margin-bottom: 32px;
-        }
-        &__btn {
-            padding: 10px 26px;
-            font-weight: 700;
-            font-size: 1.6rem;
-        }
-    }    
+    &__title {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+        max-width: 500px;
+        color: $secondary-color;
+        font-weight: 700;
+        margin: 0px;
+    }
+
+    &__desc {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        max-width: 500px;
+        color: $text-color;
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        padding: 10px 26px;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
 }
