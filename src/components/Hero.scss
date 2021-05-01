@@ -3,7 +3,7 @@
 .hero {
     position: relative;
     margin-top: 56px;
-    padding-bottom: 200px;
+    padding-bottom: 160px;
     display: flex;
     
     &__cover {
@@ -22,9 +22,9 @@
     }
 
     &__title {
-        font-size: 5.6rem;
-        line-height: 5.6rem;
-        color: $secondary-color;
+        font-size: 7rem;
+        line-height: 8rem;
+        color: $dark-blue-color;
         font-weight: 700;
         margin: 0px;
     }
@@ -33,7 +33,7 @@
         font-size: 1.8rem;
         line-height: 2rem;
         max-width: 400px;
-        color: $text-color;
+        color: $gray-color;
         margin-bottom: 32px;
     }
 

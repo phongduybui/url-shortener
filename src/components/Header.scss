@@ -17,7 +17,7 @@
         display: flex;
         flex-grow: 1;
         .nav-link {
-            color: $text-color;
+            color: $gray-violet-color;
             text-decoration: none;
             padding: 5px 12px;
             font-size: 1.4rem;
@@ -30,10 +30,10 @@
     background-color: unset;
     border: none;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.4rem;
-    color: $text-color;
-    padding: 6px 14px;
+    color: $gray-violet-color;
+    padding: 10px 24px;
 }
 
 .btn--no-bg {
