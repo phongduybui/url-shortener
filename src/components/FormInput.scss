@@ -5,7 +5,7 @@
     bottom: -60px;
     left: 0;
     width: 100%;
-    min-height: 120px;
+    min-height: 160px;
     background-color: $secondary-color;
     background-image: url(../images/bg-shorten-desktop.svg);
     background-repeat: no-repeat;
@@ -31,6 +31,18 @@
         padding: 18px;
         flex-grow: 1;
         border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 8px;
+        font-size: 2rem;
+        font-weight: 500;
+
+        &::placeholder {
+            color: $gray-violet-color;
+        }
+    }
+
+    &__btn {
+        font-size: 1.8rem;
+        padding: 17px 70px;
         border-radius: 8px;
     }
 }
