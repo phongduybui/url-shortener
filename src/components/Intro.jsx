@@ -30,7 +30,7 @@ const Intro = () => {
                 </p>
             </div>
             <div className="intro__content">
-                {content.map(card => <Card {...card} />)}
+                {content.map((card, index) => <Card {...card}  key={index} />)}
             </div>
         </section>
     );
