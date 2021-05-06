@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.scss';
+import '../styles/style.scss'
+import Footer from './Footer';
 import Header from './Header';
 import Hero from './Hero';
 import Intro from './Intro';
@@ -9,6 +10,7 @@ const App = () => (
     <Header />
     <Hero />
     <Intro />
+    <Footer />
   </div>
 );
 

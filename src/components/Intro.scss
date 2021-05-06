@@ -1,12 +1,13 @@
-@import './variables';
-
 .intro {
     background-color: hsl(0, 0%, 95%);
-    margin: 0 -64px;
+    margin-top: 0;
+    margin-left: -$margin-lr-container;
+    margin-right: -$margin-lr-container;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 100px 64px 0 64px;
+    padding: 80px $margin-lr-container;
+    padding-bottom: 160px;
 
     &__top {
         display: flex;
@@ -30,9 +31,20 @@
     }
 
     &__content {
+        position: relative;
         display: flex;
         justify-content: center;
         padding: 0 32px;
         margin-top: 70px;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 150px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background-color: $primary-color;
+        }
     }
 }

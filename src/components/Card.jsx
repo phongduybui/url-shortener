@@ -1,11 +1,10 @@
 import React from 'react';
-import './Card.scss';
 
-const Card = ({iconName, title, desc}) => {
+const Card = ({iconName, title, desc}) => {     
     return (
         <div className="card">
             <div className="card__icon">
-                <i className={`icon ${iconName}`}></i>
+                <img src={iconName}></img>
             </div>
             <h3 className="card__title">{title}</h3>
             <p className="card__desc">{desc}</p>

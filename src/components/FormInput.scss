@@ -1,11 +1,10 @@
-@import './variables';
-
 .form-input {
+    $height: 150px;
     position: absolute;
-    bottom: -60px;
+    bottom: -$height/2;
     left: 0;
     width: 100%;
-    min-height: 160px;
+    min-height: $height;
     background-color: $secondary-color;
     background-image: url(../images/bg-shorten-desktop.svg);
     background-repeat: no-repeat;

@@ -1,0 +1,16 @@
+.footer {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-size: cover;
+    background-color: $secondary-color;
+    margin-left: -$margin-lr-container;
+    margin-right: -$margin-lr-container;
+    padding: 25px $margin-lr-container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        color: #fff;
+        font-size: 3rem;
+    }
+}
