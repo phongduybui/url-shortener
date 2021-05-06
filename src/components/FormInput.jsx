@@ -1,14 +1,13 @@
 /* eslint-disable */
 import React from 'react';
 import bitly from '../apis/bitly';
-import './FormInput.scss';
 
 const FormInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    var dataString = '{ "long_url": "https://dev.bitly.com", "domain": "bit.ly", "group_guid": "Ba1bc23dE4F" }';
+    const dataString = '{"long_url": "https://stackoverflow.com/questions/47630163/axios-post-request-to-send-form-data"}'; 
     bitly.post('/shorten', dataString)
       .then(response => console.log(response))
   }
@@ -20,7 +19,9 @@ const FormInput = () => {
           className="form-input__input"
           placeholder="Shorten a link here..."
         ></input>
-        <button className="form-input__btn btn btn--rounded">Shorten It!</button>
+        <button className="form-input__btn btn btn--rounded">
+          <span>Shorten It!</span>
+        </button>
       </div>
     </form>
   );
