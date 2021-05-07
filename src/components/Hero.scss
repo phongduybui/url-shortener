@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    margin-top: 56px;
+    margin-top: 36px;
     padding-bottom: 210px;
     display: flex;
     
@@ -8,7 +8,7 @@
         object-fit: contain;
         order: 1;
         flex-grow: 1;
-        margin-right: - $margin-lr-container;
+        margin-right: -280px;
         overflow: hidden;
     }
 
@@ -20,8 +20,8 @@
     }
 
     &__title {
-        font-size: 7rem;
-        line-height: 8rem;
+        font-size: 6.8rem;
+        line-height: 7.5rem;
         color: $dark-blue-color;
         font-weight: 700;
         margin: 0px;
@@ -31,7 +31,32 @@
         font-size: 1.8rem;
         line-height: 2rem;
         max-width: 90%;
-        color: $gray-color;
-        margin-bottom: 32px;
+        color: $gray-violet-color;
+        line-height: 3rem;
+        @include text-clamp(3);
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        flex-direction: column;
+        padding-bottom: 150px;
+
+        &__content {
+            order: 2;
+            padding-right: 0;
+            text-align: center;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        &__title {
+            font-size: 4.6rem;
+            line-height: 5.6rem;
+        }
+
+        &__desc {
+            max-width: 100%;
+        }
     }
 }
