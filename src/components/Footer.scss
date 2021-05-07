@@ -2,9 +2,9 @@
     background-image: url(../images/bg-shorten-desktop.svg);
     background-size: cover;
     background-color: $secondary-color;
-    margin-left: -$margin-lr-container;
-    margin-right: -$margin-lr-container;
-    padding: 25px $margin-lr-container;
+    margin-left: calc(-1*var(--margin-lr-container));
+    margin-right: calc(-1*var(--margin-lr-container));
+    padding: 25px var(--margin-lr-container);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,5 +12,15 @@
     &__title {
         color: #fff;
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 767px) { 
+    .footer {
+        padding-top: 6px;
+        &__title {
+            line-height: 3.4rem;
+            text-align: center;
+        }
     }
 }
