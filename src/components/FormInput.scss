@@ -31,7 +31,7 @@
         flex-grow: 1;
         border: 1px solid rgba(255,255,255,0.1);
         border-radius: 8px;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
 
         &::placeholder {
@@ -43,5 +43,31 @@
         font-size: 1.8rem;
         padding: 17px 70px;
         border-radius: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-input {
+        $height: 160px;
+    
+        &__wrapper {
+            padding: 0 24px;
+            flex-flow: column wrap;
+        }
+    
+        &__input {
+            width: 100%;
+            font-size: 1.7rem;
+            margin-right: 0;
+            margin-bottom: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    
+        &__btn {
+            font-size: 1.6rem;
+            width: 100%;
+            padding: 10px 24px;
+        }
     }
 }
