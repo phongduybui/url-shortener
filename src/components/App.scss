@@ -1,3 +1,8 @@
+:root {
+    --margin-lr-container: 160px;
+    --header-height: 82px;
+}
+
 * {
     box-sizing: inherit;
 }
@@ -14,10 +19,17 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .app {
     // width: 100%;
     max-width: 100%;
-    margin: 0 $margin-lr-container;
+    margin: 0 var(--margin-lr-container);
+}
+
+@media (max-width: 991px) {
+    :root {
+        --margin-lr-container: 32px;
+    }
 }

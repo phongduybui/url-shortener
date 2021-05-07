@@ -1,0 +1,43 @@
+.burger {
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: var(--margin-lr-container);
+    height: 25px;
+    display: none;
+    z-index: 99;
+
+    @media (max-width: 991px) {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+
+    &__bar {
+        width: 2.5rem;
+        height: 0.4rem;
+        background-color: $primary-color;
+    }
+
+    &--open {
+        opacity: 0.8;
+        
+        .burger__bar {
+            transition: transform .4s, opacity .3s;
+            transform-origin: 0;
+            
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

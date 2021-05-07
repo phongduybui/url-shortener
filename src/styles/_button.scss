@@ -10,6 +10,7 @@
     font-size: 1.4rem;
     color: $gray-violet-color;
     padding: 10px 24px;
+    white-space: nowrap;
 
     > span {
         position: relative;
@@ -17,7 +18,7 @@
     }
 
     + .btn {
-        margin-left: 16px;
+        margin-left: 6px;
     }
 
     &:before {

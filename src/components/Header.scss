@@ -1,33 +1,15 @@
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding-top: 25px;
+    margin: 0 calc(-1*var(--margin-lr-container));
+    padding: 25px var(--margin-lr-container) 0;
 
     &__logo {
         display: flex;
         align-items: center;
         height: 57px;
-    }
-
-    &__navbar {
-        list-style: none;
-        display: flex;
-        flex-grow: 1;
-        .nav-link {
-            color: $gray-violet-color;
-            text-decoration: none;
-            padding: 5px 12px;
-            font-size: 1.4rem;
-            font-weight: 700;
-
-            &.active {
-                color: $secondary-color;
-            }
-
-            &:hover {
-                color: $secondary-color;
-            }
-        }
     }
 }
