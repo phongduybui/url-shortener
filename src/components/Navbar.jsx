@@ -5,13 +5,13 @@ const Navbar = ({ collapse }) => {
         <div className={`navbar ${collapse ? 'navbar--collapse' : ''}`}>
             <ul className="navbar__menu">
                 <li className="nav-item">
-                <a href="#" className="nav-link active">Features</a>
+                <a href="/#" className="nav-link active">Features</a>
                 </li>
                 <li className="nav-item">
-                <a href="#" className="nav-link">Pricing</a>
+                <a href="/#" className="nav-link">Pricing</a>
                 </li>
                 <li className="nav-item">
-                <a href="#" className="nav-link">Resources</a>
+                <a href="/#" className="nav-link">Resources</a>
                 </li>
             </ul>
             <div className="navbar__button">
