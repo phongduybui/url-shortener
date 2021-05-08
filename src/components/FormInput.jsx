@@ -1,21 +1,17 @@
 /* eslint-disable */
 import React from 'react';
-import bitly from '../apis/bitly';
 import { useForm } from 'react-hook-form';
 
-const FormInput = () => {
+const FormInput = ({ onFormSubmit, formRef }) => {
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, setError, formState: { errors } } = useForm();
 
   const onSubmit = ({ link }) => {
-    const dataString = `{"long_url": "${link}"}`; 
-    bitly.post('/shorten', dataString)
-      .then(response => console.log(response))
+    onFormSubmit(link, setError);
   }
 
-  console.log(errors)
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="form-input">
+    <form onSubmit={handleSubmit(onSubmit)} className="form-input" ref={formRef}>
       <div className="form-input__wrapper">
         <div className="form-input__inner">
           <input
@@ -26,7 +22,7 @@ const FormInput = () => {
               },
               pattern: {
                 value: /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/gm,
-                message: 'Invalid URL'
+                message: 'Invalid link! Example valid: https://www.google.com/'
               }
             })}
             className={`form-input__input ${errors.link && 'error'}`}
