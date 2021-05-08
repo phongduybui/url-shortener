@@ -5,3 +5,9 @@
     -webkit-line-clamp: $line-clamp;
     text-overflow: ellipsis;
 }
+
+@mixin text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
