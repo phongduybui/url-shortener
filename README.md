@@ -16,8 +16,8 @@ To run this project, you will need to add the following environment variables to
 
 `REACT_APP_ACCESS_TOKEN`
 
-To get the access token from bitly follow the instructions below:  
-https://support.bitly.com/hc/en-us/articles/230647907-How-do-I-generate-an-OAuth-access-token-for-the-Bitly-API-
+To get the access token from bitly follow the [instructions](https://support.bitly.com/hc/en-us/articles/230647907-How-do-I-generate-an-OAuth-access-token-for-the-Bitly-API-)
+
 
 ## Installation 
 
