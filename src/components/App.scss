@@ -1,39 +1,50 @@
 :root {
-    --margin-lr-container: 160px;
-    --header-height: 82px;
+  --margin-lr-container: 160px;
+  --header-height: 82px;
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    line-height: 2rem;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 2rem;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 1.8rem;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 #root {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .app {
-    // width: 100%;
-    max-width: 100%;
-    margin: 0 var(--margin-lr-container);
+  // width: 100%;
+  max-width: 100%;
+  margin: 0 var(--margin-lr-container);
+}
+
+.Toastify__toast-body {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    padding: 30px !important;
+  }
 }
 
 @media (max-width: 991px) {
-    :root {
-        --margin-lr-container: 32px;
-    }
+  :root {
+    --margin-lr-container: 32px;
+  }
 }
