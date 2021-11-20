@@ -3,7 +3,8 @@
 
 The project uses the **bitly API** to create shortened links
 
-
+## Description
+Create shorten link, copy from clipboard,...
 
 ## Demo
 
